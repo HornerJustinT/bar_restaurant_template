@@ -4,7 +4,6 @@ Heroku link @ https://whispering-oasis-78523.herokuapp.com/
 
 TO DO 
 
-1̶.̶ ̶S̶e̶t̶ ̶u̶p̶ ̶H̶e̶r̶o̶k̶u̶ ̶L̶i̶n̶k̶
-
+1. S̶e̶t̶ ̶u̶p̶ ̶H̶e̶r̶o̶k̶u̶ ̶L̶i̶n̶k̶
 2. Try to set up in Gatsby Framework.
 3. Set up a google maps API or other maps service
