@@ -113,6 +113,9 @@ p{
   background-image: url("https://i.imgur.com/Uytz0JO.png");
   background-size: cover;
 }
+.footer{
+  background-color: black;
+}
 .Header {
   display: flex;
   height: 250px;

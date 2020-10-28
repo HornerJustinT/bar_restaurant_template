@@ -4,6 +4,7 @@ import "./App.css";
 import { SocialIcon } from "react-social-icons";
 import { AiOutlinePhone } from "react-icons/ai";
 import { IconContext } from "react-icons";
+import menu from "../../shooters_menu.pdf"
 
 class HomePage extends Component {
   render() {
@@ -44,7 +45,8 @@ class HomePage extends Component {
             </a>
             <a
               className="Menu-item"
-              href="https://drive.google.com/file/d/1WlqQyTgClnVlaVplTBUEyCxUJiWswtgj/view?usp=sharing"
+              href={menu}
+              download="Shooters Menu"
             >
               {" "}
               Menu
@@ -57,7 +59,7 @@ class HomePage extends Component {
           </div>
           <div className="Cover">
             <h1>Great food, wonderful service, and fun atmosphere</h1>
-            <form action="https://drive.google.com/file/d/1WlqQyTgClnVlaVplTBUEyCxUJiWswtgj/view?usp=sharing">
+            <form action={menu}>
               <input
                 className="Menu-link"
                 type="submit"
@@ -85,7 +87,9 @@ class HomePage extends Component {
             ></img>
           </div>
         </div>
-        <footer>Footer</footer>
+        <footer className="footer"><p className="White">
+        © 2020, Shooters Sport Bar. All rights reserved
+          </p></footer>
       </div>
     );
   }
