@@ -6,7 +6,32 @@
   height: 40vmin;
   pointer-events: none;
 }
+.Modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
 
+.Modal-main {
+  position:fixed;
+  background: white;
+  width: 80%;
+  height: auto;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -27,12 +52,89 @@
   .Header-logo{
     width: 50%;
   }
+  .blur {
+    filter: blur(1px);
+  }
   .Menu-item {
     font-size: 2vw;
   }
   .Menu-order {
     font-size: 2vw;
   }
+}
+.Banner{
+  background: #7d6950;
+  height: 100px;
+}
+.Popup{
+  background: white;
+  height: 200px;
+
+
+}
+.Modal button{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.Plain-p{
+  font-family: monospace;
+  font-size: 1vw;
+  color: black;
+}
+.header-callout {
+  font-family: 'Londrina Solid', cursive;
+  color: #f0e1aa;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 40px;
+}
+.popup-callout{
+  font-family: 'Londrina Solid', cursive;
+  color: #89711a;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 40px;
+}
+.btn-popup{
+  background: blue;
+  color:white;
+  border-color: blue;
+  color: #f0e1aa;
+  font-size: 24px;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
+}
+.btn-primary {
+  background: #f4251a;
+  color: #231f20;
+  border-color: #f4251a;
+  font-family: 'Londrina Solid', cursive;
+  color: #f0e1aa;
+  font-size: 24px;
+  text-decoration: none;
+}
+.text-center{
+  text-align: center;
+}
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
 }
 .Phone{
   font-size: 2vw;
