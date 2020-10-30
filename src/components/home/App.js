@@ -342,6 +342,8 @@ class HomePage extends Component {
     <input type="submit" value="Submit"/>
 
   </form>
+  <h5>Phone: (763) 631-7468 </h5>
+  <h5>Address : 5584 MN-95, Princeton</h5>
 </div>
 </div>
           {/* <div className="contact"><h2 className="map-right">Location</h2><p>Come join us at 5584 MN-95, Princeton. We are 4 miles east of Princetown on highway 95!</p>
