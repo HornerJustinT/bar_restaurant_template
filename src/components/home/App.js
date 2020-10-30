@@ -263,6 +263,7 @@ class HomePage extends Component {
             <img
               width="100%"
               src="https://cdn.pixabay.com/photo/2016/05/25/10/43/hamburger-1414422_960_720.jpg"
+              
             ></img>
           </div>
         </div>
@@ -272,8 +273,8 @@ class HomePage extends Component {
   style="mapbox://styles/mapbox/streets-v9"
   center= {[-93.522996, 45.586754]}
   containerStyle={{
-    height: '50vh',
-    width: '50vw',
+    height: '100%',
+    width: '100%',
     
   }}
 
@@ -286,7 +287,8 @@ class HomePage extends Component {
   </Layer>
 </Map>
           
-          </div><div><h2>Come join us at 5584 MN-95, Princeton. We are 4 miles east of Princetown on highway 95!</h2></div></div>
+          </div><div className="contact"><h2 className="map-right">Location</h2><p>Come join us at 5584 MN-95, Princeton. We are 4 miles east of Princetown on highway 95!</p>
+          <h2>Phone</h2><p>(763) 631-7468</p></div></div>
         <footer className="footer">
           <p className="White">
             © 2020, Shooters Sport Bar. All rights reserved
