@@ -9,9 +9,19 @@ import 'reactjs-popup/dist/index.css';
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
-
+import ReactMapboxGl, { Layer, Feature } from 'react-mapbox-gl';
+import 'mapbox-gl/dist/mapbox-gl.css';
+const Map = ReactMapboxGl({
+  accessToken:
+    'pk.eyJ1IjoiaG9ybmVyMSIsImEiOiJja2dqYjF5ZjYwa2xrMnltbzZ1MXd1Z2NzIn0.tL4K0jThtP5QJzhkFt-WbQ'
+});
 class HomePage extends Component {
-  state = { show: true };
+  state = { show: true,lng: 50,
+    lat: 34,
+    zoom: 2,
+    
+     };
+  
   componentDidMount(){
     console.log(this.state.show)
   }
@@ -51,7 +61,7 @@ class HomePage extends Component {
   
           <div className="Banner">
             <div className="header-callout text-center">
-            Delivery Now Available!{" "}
+            Online Ordering Now Available!{" "}
   
               <a
                 href="Google.com"
@@ -170,7 +180,7 @@ class HomePage extends Component {
 
         <div className="Banner">
           <div className="header-callout text-center">
-          Delivery Now Available!{" "}
+          Online Ordering Now Available!{" "}
 
             <a
               href="Google.com"
@@ -256,6 +266,27 @@ class HomePage extends Component {
             ></img>
           </div>
         </div>
+        <div className=
+        'two-columns'><div>
+          <Map
+  style="mapbox://styles/mapbox/streets-v9"
+  center= {[-93.522996, 45.586754]}
+  containerStyle={{
+    height: '50vh',
+    width: '50vw',
+    
+  }}
+
+
+  
+  
+>
+  <Layer type="symbol" id="marker" layout={{ 'icon-image': 'marker-15' }}>
+    <Feature coordinates={[-93.522996, 45.586754]} />
+  </Layer>
+</Map>
+          
+          </div><div><h2>Come join us at 5584 MN-95, Princeton. We are 4 miles east of Princetown on highway 95!</h2></div></div>
         <footer className="footer">
           <p className="White">
             © 2020, Shooters Sport Bar. All rights reserved

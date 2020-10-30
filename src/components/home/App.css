@@ -18,7 +18,7 @@
 .Modal-main {
   position:fixed;
   background: white;
-  width: 80%;
+  width: 50%;
   height: auto;
   top:50%;
   left:50%;
@@ -54,6 +54,12 @@
   }
   .blur {
     filter: blur(1px);
+  }
+  .two-columns{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: gray;
+
   }
   .Menu-item {
     font-size: 2vw;
@@ -252,9 +258,10 @@ p{
   padding: 10px;
 }
 .About {
-  height: 500px;
+  height: 542.6px;
   display: grid;
   grid-template-columns: 50% 50%;
+  
   
 }
 .App-header {
