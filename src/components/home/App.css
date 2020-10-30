@@ -246,6 +246,7 @@ p{
 .two-columns{
   display: grid;
   height: 50vh;
+  margin-bottom: 75px;
 }
 .Menu-order {
   font-weight: bold;
@@ -282,6 +283,10 @@ p{
 }
 .footer{
   background-color: black;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 .Header {
   display: flex;

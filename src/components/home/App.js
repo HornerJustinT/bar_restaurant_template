@@ -16,7 +16,7 @@ const Map = ReactMapboxGl({
     'pk.eyJ1IjoiaG9ybmVyMSIsImEiOiJja2dqYjF5ZjYwa2xrMnltbzZ1MXd1Z2NzIn0.tL4K0jThtP5QJzhkFt-WbQ'
 });
 class HomePage extends Component {
-  state = { show: true,lng: 50,
+  state = { show: false,lng: 50,
     lat: 34,
     zoom: 2,
     
@@ -37,7 +37,7 @@ class HomePage extends Component {
     if(this.state.show===true){
       return (
         <div className="App blur">
-          <div>
+          {/* <div>
           <Modal className="Modal Modal-main" show={this.state.show} onHide={this.hideModal}>
           <div className="Popup">
           <button onClick={this.hideModal}>X</button>
@@ -57,7 +57,7 @@ class HomePage extends Component {
             </div>
           </div>
           </Modal>
-          </div>
+          </div> */}
   
           <div className="Banner">
             <div className="header-callout text-center">
