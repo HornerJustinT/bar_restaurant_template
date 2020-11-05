@@ -6,16 +6,12 @@
   height: 40vmin;
   pointer-events: none;
 }
-.Modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width:100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+.three-columns{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
 }
 
-.Modal-main {
+.Modal {
   position:fixed;
   background: white;
   width: 50%;
@@ -91,8 +87,7 @@
 }
 .Popup{
   background: white;
-  height: 200px;
-
+  height: 100px;
 
 }
 .Modal button{
