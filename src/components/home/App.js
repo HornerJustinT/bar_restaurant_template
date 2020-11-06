@@ -9,7 +9,7 @@ import "reactjs-popup/dist/index.css";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
-import ReactMapboxGl, { Marker,Layer, Feature } from "react-mapbox-gl";
+import ReactMapboxGl, { Marker, Layer, Feature } from "react-mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { FacebookProvider, Feed, Page } from "react-facebook";
 const Map = ReactMapboxGl({
@@ -284,7 +284,9 @@ class HomePage extends Component {
             <button className="Menu-order">Order Online</button>
           </div>
           <div className="Cover">
-            <h1 className="shadow-title">Great food, wonderful service, and fun atmosphere</h1>
+            <h1 className="shadow-title">
+              Great food, wonderful service, and fun atmosphere
+            </h1>
             <form action={menu}>
               <input
                 className="Menu-link"
@@ -297,8 +299,10 @@ class HomePage extends Component {
         <div className="About">
           <div className="About-left">
             <a name="About"></a>{" "}
-            <h1 className="shadow-title" id="About-text">Welcome to Shooters Sports Bar</h1>
-            <p>
+            <h1 className="shadow-title" id="About-text">
+              Welcome to Shooters Sports Bar
+            </h1>
+            <p className="about-text">
               Shooters is a sports bar located on highway 95, 4 miles west of
               Princeton. Here at Shooters we value our hometown feel and
               delicious food. Please come in and have a drink or try our home
@@ -370,53 +374,64 @@ class HomePage extends Component {
             © 2020, Shooters Sport Bar. All rights reserved
           </p>
         </footer> */}
-        <div className="three-columns">
+        <div className="white three-columns">
           <div className="eighty-twenty">
             <div>
-            <h1>Our Facebook Feed</h1>
+              <h1>Our Facebook Feed</h1>
             </div>
             <div>
-            <FacebookProvider className="facebook-feed" appId="810535819790517">
-              <Page className="facebook-feed"
-                href="facebook.com/pages/category/Sports-Bar/Shooters-121490991194526/"
-                tabs="timeline"
-                height="100%"
-              />
-            </FacebookProvider>{" "}
+              <FacebookProvider
+                className="facebook-feed"
+                appId="810535819790517"
+              >
+                <Page
+                  className="facebook-feed"
+                  href="facebook.com/pages/category/Sports-Bar/Shooters-121490991194526/"
+                  tabs="timeline"
+                  height="100%"
+                />
+              </FacebookProvider>{" "}
             </div>
-
-
           </div>
-          <div className="eighty-twenty">
+          <div className=" white eighty-twenty">
             <div>
-            <h1>Find Us</h1>
+              <h1>Find Us</h1>
             </div>
             <div>
-            <Map
-              // add directions link
-              style="mapbox://styles/mapbox/streets-v9"
-              center={[-93.522996, 45.586754]}
-              containerStyle={{
-                height: "100%",
-                width: "100%",
-              }}
-            >
-<Layer type="symbol" id="marker" 
-              layout={{ "icon-image": "marker-11", "icon-size": 5 }}
- >
-          <Feature
-            coordinates={[-93.522996, 45.586754]}/>
-        </Layer>
-            </Map>
+              <Map
+                // add directions link
+                style="mapbox://styles/mapbox/streets-v8"
+                center={[-93.522996, 45.586754]}
+                containerStyle={{
+                  height: "100%",
+                  width: "100%",
+                }}
+              >
+                <Layer
+                  type="symbol"
+                  id="marker"
+                  layout={{ "icon-image": "marker-15", "icon-size": 1 }}>
+                
+                  <Feature coordinates={[-93.522996, 45.586754]} />
+                </Layer>
+              </Map>
             </div>
+          </div>
+          <div className="white eighty-twenty">
+            <div>
+              <h1>Contact Us</h1>
+            </div>
+            <div className="white align-left contact-us">
+              <h2>Shooters Sports Bar</h2>
+              <h4>5584-MN-95</h4>
+              <h4>Princeton, MN 55371</h4>
+              <h4>(763) 631-7468
+              <a className="Float-right White Phone" href="tel:763-631-7468"/>
+                </h4>
             
-          </div>
-          <div className="eighty-twenty">
-            <h1>Contact Us</h1>
-            <p>Shooters Sports Bar 5584 MN-95, Princeton</p>
+            </div>
           </div>
         </div>
-        <footer>Facebook Feed Map Contact info</footer>
       </div>
     );
   }

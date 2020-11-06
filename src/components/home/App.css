@@ -21,7 +21,9 @@
 .display-block {
   display: block;
 }
-
+.three-columns{
+  background-color: black;
+}
 .display-none {
   display: none;
 }
@@ -212,7 +214,7 @@
   color: white;
   text-shadow: 8px 8px black;
 }
-p{
+.about-text{
   font-size: 2vw;
 }
 .Menu-link{
@@ -363,6 +365,12 @@ input[type=submit]:hover {
   
   
 }
+.align-left{
+  text-align: left;
+}
+.contact-us{
+  margin-left: 20%;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -373,7 +381,9 @@ input[type=submit]:hover {
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.white{
+  color: white;
+}
 .App-link {
   color: #61dafb;
 }
