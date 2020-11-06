@@ -9,13 +9,14 @@ import "reactjs-popup/dist/index.css";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
-import ReactMapboxGl, { Layer, Feature } from "react-mapbox-gl";
+import ReactMapboxGl, { Marker,Layer, Feature } from "react-mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { FacebookProvider, Feed, Page } from "react-facebook";
 const Map = ReactMapboxGl({
   accessToken:
     "pk.eyJ1IjoiaG9ybmVyMSIsImEiOiJja2dqYjF5ZjYwa2xrMnltbzZ1MXd1Z2NzIn0.tL4K0jThtP5QJzhkFt-WbQ",
 });
+
 class HomePage extends Component {
   state = { show: true };
 
@@ -283,7 +284,7 @@ class HomePage extends Component {
             <button className="Menu-order">Order Online</button>
           </div>
           <div className="Cover">
-            <h1>Great food, wonderful service, and fun atmosphere</h1>
+            <h1 className="shadow-title">Great food, wonderful service, and fun atmosphere</h1>
             <form action={menu}>
               <input
                 className="Menu-link"
@@ -296,7 +297,7 @@ class HomePage extends Component {
         <div className="About">
           <div className="About-left">
             <a name="About"></a>{" "}
-            <h1 id="About-text">Welcome to Shooters Sports Bar</h1>
+            <h1 className="shadow-title" id="About-text">Welcome to Shooters Sports Bar</h1>
             <p>
               Shooters is a sports bar located on highway 95, 4 miles west of
               Princeton. Here at Shooters we value our hometown feel and
@@ -311,7 +312,7 @@ class HomePage extends Component {
             ></img>
           </div>
         </div>
-        <div className="two-columns">
+        {/* <div className="two-columns">
           <div>
             <Map
               style="mapbox://styles/mapbox/streets-v9"
@@ -361,7 +362,7 @@ class HomePage extends Component {
             <h5>Phone: (763) 631-7468 </h5>
             <h5>Address : 5584 MN-95, Princeton</h5>
           </div>
-        </div>
+        </div> */}
         {/* <div className="contact"><h2 className="map-right">Location</h2><p>Come join us at 5584 MN-95, Princeton. We are 4 miles east of Princetown on highway 95!</p>
           <h2>Contact</h2><p>(763) 631-7468</p></div></div> */}
         {/* <footer className="footer">
@@ -370,17 +371,27 @@ class HomePage extends Component {
           </p>
         </footer> */}
         <div className="three-columns">
-          <div className="facebook-feed">
+          <div className="eighty-twenty">
+            <div>
             <h1>Our Facebook Feed</h1>
-            <FacebookProvider appId="810535819790517">
-              <Page
+            </div>
+            <div>
+            <FacebookProvider className="facebook-feed" appId="810535819790517">
+              <Page className="facebook-feed"
                 href="facebook.com/pages/category/Sports-Bar/Shooters-121490991194526/"
                 tabs="timeline"
+                height="100%"
               />
             </FacebookProvider>{" "}
+            </div>
+
+
           </div>
-          <div className="map">
+          <div className="eighty-twenty">
+            <div>
             <h1>Find Us</h1>
+            </div>
+            <div>
             <Map
               // add directions link
               style="mapbox://styles/mapbox/streets-v9"
@@ -390,16 +401,17 @@ class HomePage extends Component {
                 width: "100%",
               }}
             >
-              <Layer
-                type="symbol"
-                id="marker"
-                layout={{ "icon-image": "marker-15" }}
-              >
-                <Feature coordinates={[-93.522996, 45.586754]} />
-              </Layer>
+<Layer type="symbol" id="marker" 
+              layout={{ "icon-image": "marker-11", "icon-size": 5 }}
+ >
+          <Feature
+            coordinates={[-93.522996, 45.586754]}/>
+        </Layer>
             </Map>
+            </div>
+            
           </div>
-          <div className="Contact info">
+          <div className="eighty-twenty">
             <h1>Contact Us</h1>
             <p>Shooters Sports Bar 5584 MN-95, Princeton</p>
           </div>

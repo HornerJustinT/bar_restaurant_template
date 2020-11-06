@@ -6,10 +6,7 @@
   height: 40vmin;
   pointer-events: none;
 }
-.three-columns{
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-}
+
 
 .Modal {
   position:fixed;
@@ -34,6 +31,10 @@
   }
 }
 @media (max-width: 1000px) {
+  .three-columns{
+    display: grid;
+    grid-template-rows: 500px 500px 500px;
+  }
   .Header-logo {
     width: 2000%;
   }
@@ -60,6 +61,11 @@
   }
 }
 @media (min-width: 1000px) {
+  .three-columns{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 600px;
+  }
   .About{
 
     grid-template-columns: 50% 50%;
@@ -201,7 +207,7 @@
   margin-left: .3vh;
   padding-left: .1vh;
 }
-h1 {
+.shadow-title {
   font-size: 40px;
   color: white;
   text-shadow: 8px 8px black;
@@ -269,6 +275,10 @@ input[type=submit]:hover {
 }
 .map-right{
   text-align: center;
+}
+.eighty-twenty{
+  display: grid;
+  grid-template-rows: 20% 80%;
 }
 .two-columns{
   display: grid;
