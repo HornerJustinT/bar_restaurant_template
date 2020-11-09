@@ -18,7 +18,7 @@ const Map = ReactMapboxGl({
 });
 
 class HomePage extends Component {
-  state = { show: true };
+  state = { show: false };
 
   showModal = () => {
     this.setState({ show: true });
