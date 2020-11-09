@@ -9,7 +9,12 @@ import "reactjs-popup/dist/index.css";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
-import ReactMapboxGl, { Marker, Layer, Feature } from "react-mapbox-gl";
+import ReactMapboxGl, {
+  Marker,
+  Layer,
+  Feature,
+  ZoomControl,
+} from "react-mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { FacebookProvider, Feed, Page } from "react-facebook";
 const Map = ReactMapboxGl({
@@ -27,7 +32,11 @@ class HomePage extends Component {
   hideModal = () => {
     this.setState({ show: false });
   };
-
+  componentDidMount() {
+    setInterval(() => {
+      this.forceUpdate();
+    }, 200);
+  }
   render() {
     return (
       <div className={"App " + (this.state.show ? "blur" : "")}>
@@ -232,18 +241,22 @@ class HomePage extends Component {
                 style="mapbox://styles/mapbox/streets-v8"
                 center={[-93.522996, 45.586754]}
                 containerStyle={{
-                  height: "100%",
+                  height: "80%",
                   width: "100%",
                 }}
               >
                 <Layer
                   type="symbol"
                   id="marker"
-                  layout={{ "icon-image": "marker-15", "icon-size": 1 }}>
-                
+                  layout={{ "icon-image": "marker-15", "icon-size": 1 }}
+                >
                   <Feature coordinates={[-93.522996, 45.586754]} />
                 </Layer>
+                <ZoomControl />
               </Map>
+              <button className="btn" id="directions">
+                HI
+              </button>
             </div>
           </div>
           <div className="white eighty-twenty">
@@ -254,10 +267,13 @@ class HomePage extends Component {
               <h2>Shooters Sports Bar</h2>
               <h4>5584-MN-95</h4>
               <h4>Princeton, MN 55371</h4>
-              <h4>(763) 631-7468
-              <a className="Float-right White Phone" href="tel:763-631-7468"/>
-                </h4>
-            
+              <h4>
+                (763) 631-7468
+                <a
+                  className="Float-right White Phone"
+                  href="tel:763-631-7468"
+                />
+              </h4>
             </div>
           </div>
         </div>

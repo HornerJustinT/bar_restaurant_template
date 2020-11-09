@@ -27,28 +27,23 @@
 .display-none {
   display: none;
 }
+.Header-social-media {
+  display: grid;
+  text-align: left;
+  padding: 20px;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 @media (max-width: 1000px) {
-  .Header-contact {
-    flex-grow: 1;
-    width: 10%;
-  }
-  .Header-social-media {
-    text-align: left;
-    width: 10%;
-    padding: 20px;
+  .about-text{
+    font-size: 4vw;
   }
   .three-columns{
     display: grid;
     grid-template-rows: 500px 500px 500px;
-  }
-  .Header-logo {
-    width: 2000%;
-    margin: -20%;
   }
   .Menu-item {
     font-size: 4vw;
@@ -63,7 +58,7 @@
     font-size: 4vw;
   }
   #About-text{
-    font-size: 4vw;
+    font-size: 6vw;
   }
   .About{
     grid-column: 1vw;
@@ -71,13 +66,13 @@
   .two-columns{
     grid-template-rows: 100vw 100vw;
   }
+  .Header-logo {
+    margin: -60%;
+  }
 }
 @media (min-width: 1000px) {
-
-  .Header-social-media {
-    text-align: left;
-    width: 10%;
-    padding: 20px;
+  .about-text{
+    font-size: 2vw;
   }
 
   .three-columns{
@@ -88,9 +83,6 @@
   .About{
 
     grid-template-columns: 50% 50%;
-  }
-  .Header-logo{
-    width: 50%;
   }
   .blur {
     filter: blur(1px);
@@ -108,7 +100,7 @@
 }
 .Banner{
   background: #7d6950;
-  height: 100px;
+  height: auto;
 }
 .Popup{
   background: white;
@@ -161,6 +153,13 @@
     background:  #4CAF50;
     border-color:  #4CAF50;
     text-shadow: 2px 2px black;
+}
+#directions{
+  margin-top: 5%;
+  color: white;
+  text-shadow: 2px 2px black;
+  width: 100%;
+  background-color: #45a049;
 }
 .btn-primary {
   /* background: #4CAF50;
@@ -231,9 +230,7 @@
   color: white;
   text-shadow: 8px 8px black;
 }
-.about-text{
-  font-size: 2vw;
-}
+
 .Menu-link{
   background-color: #4CAF50; /* Green */
   border: none;
@@ -345,18 +342,18 @@ input[type=submit]:hover {
   width: 100%;
 }
 .Header {
-  display: flex;
+  display: grid;
   height: 250px;
+  grid-template-columns: 25% 50% 25%;
 }
 .Header-logo {
-  flex-grow: 1;
+  display: grid;
   background-image: url("../../imgonline-com-ua-Transparent-background-kJMFDBcMcbbN.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
 .Header-contact {
-  flex-grow: 1;
   padding: 20px;
   text-align: right;
 }
