@@ -33,12 +33,22 @@
   }
 }
 @media (max-width: 1000px) {
+  .Header-contact {
+    flex-grow: 1;
+    width: 10%;
+  }
+  .Header-social-media {
+    text-align: left;
+    width: 10%;
+    padding: 20px;
+  }
   .three-columns{
     display: grid;
     grid-template-rows: 500px 500px 500px;
   }
   .Header-logo {
     width: 2000%;
+    margin: -20%;
   }
   .Menu-item {
     font-size: 4vw;
@@ -63,6 +73,13 @@
   }
 }
 @media (min-width: 1000px) {
+
+  .Header-social-media {
+    text-align: left;
+    width: 10%;
+    padding: 20px;
+  }
+
   .three-columns{
     display: grid;
     grid-template-columns: 33% 33% 33%;
@@ -198,7 +215,7 @@
   border-radius: 4px;
 }
 .Phone{
-  font-size: 2vw;
+  font-size: 3vw;
 }
 .Float-left{
   float: left;
@@ -330,11 +347,6 @@ input[type=submit]:hover {
 .Header {
   display: flex;
   height: 250px;
-}
-.Header-social-media {
-  text-align: left;
-  width: 30%;
-  padding: 20px;
 }
 .Header-logo {
   flex-grow: 1;
