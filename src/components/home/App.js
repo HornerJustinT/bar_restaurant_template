@@ -235,7 +235,7 @@ class HomePage extends Component {
             <div>
               <h1>Find Us</h1>
             </div>
-            <div>
+            <div className="map">
               <Map
                 // add directions link
                 style="mapbox://styles/mapbox/streets-v8"
@@ -254,9 +254,14 @@ class HomePage extends Component {
                 </Layer>
                 <ZoomControl />
               </Map>
-              <button className="btn" id="directions">
-                HI
-              </button>
+              <button className="btn"
+              id="directions"
+    type="button"
+    onClick={(e) => {
+      e.preventDefault();
+      window.location.href="https://www.google.com/maps/dir//Shooters,+5584+MN-95,+Princeton,+MN+55371/@45.5868446,-93.525281,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x52b39f09b35095ef:0x8bb31db0b8b0f1f8!2m2!1d-93.5230923!2d45.5868446!3e0";
+      }}
+> Directions</button>
             </div>
           </div>
           <div className="white eighty-twenty">
