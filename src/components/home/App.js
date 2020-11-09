@@ -221,12 +221,13 @@ class HomePage extends Component {
               <FacebookProvider
                 className="facebook-feed"
                 appId="810535819790517"
+                height="400px"
               >
                 <Page
                   className="facebook-feed"
                   href="facebook.com/pages/category/Sports-Bar/Shooters-121490991194526/"
                   tabs="timeline"
-                  height="100%"
+                  height="320px"
                 />
               </FacebookProvider>{" "}
             </div>

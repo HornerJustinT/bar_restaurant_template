@@ -22,6 +22,7 @@
   display: block;
 }
 .three-columns{
+  height: auto;
   background-color: black;
 }
 .display-none {
@@ -78,7 +79,7 @@
   .three-columns{
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 600px;
+    grid-template-rows: 400px;
   }
   .About{
 
@@ -106,6 +107,9 @@
   background: white;
   height: 100px;
 
+}
+.fb-page span{
+  height: 80%;
 }
 .Modal button{
   position: absolute;
@@ -291,7 +295,8 @@ input[type=submit]:hover {
   text-decoration: none;
 }
 .map {
-  margin:5%;
+  margin-left:5%;
+  margin-right: 5%;
 }
 .map-right{
   text-align: center;
