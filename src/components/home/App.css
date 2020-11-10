@@ -31,6 +31,7 @@
   display: grid;
   text-align: left;
   padding: 20px;
+
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -39,7 +40,7 @@
 }
 @media (max-width: 1000px) {
   .Phone{
-    font-size: 3vw;
+    font-size: 2.5vw;
   }
   .about-text{
     font-size: 4vw;
@@ -70,10 +71,13 @@
     grid-template-rows: 100vw 100vw;
   }
   .Header-logo {
-    margin: -20%;
+    
   }
 }
 @media (min-width: 1000px) {
+  .Header{
+    height: 50vh;
+  }
   .Phone{
     font-size: 2vw;
   }
@@ -181,7 +185,7 @@ facebook-feed{
   border-color: #4CAF50;
   font-family: 'Londrina Solid', cursive;
   color: #f0e1aa; */
-  font-size: 24px;
+  font-size: 2vw;
   text-decoration: none;
   font-weight: bold;
   /* float: left; */
@@ -240,7 +244,7 @@ facebook-feed{
   padding-left: .1vh;
 }
 .shadow-title {
-  font-size: 40px;
+  font-size: 4vw;
   color: white;
   text-shadow: 8px 8px black;
 }
@@ -253,7 +257,8 @@ facebook-feed{
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 2vw;
+  font-weight: bold;
 }
 .White{
   color: white;
@@ -351,7 +356,7 @@ input[type=submit]:hover {
 .First-photo {
   background-image: url("https://i.imgur.com/Uytz0JO.png");
   background-size: cover;
-  height: 100vh;
+  height: auto;
 }
 .footer{
   background-color: black;
@@ -362,8 +367,7 @@ input[type=submit]:hover {
 }
 .Header {
   display: grid;
-  height: 250px;
-  grid-template-columns: 25% 50% 25%;
+  grid-template-columns: 20% 60% 20%;
 }
 .Header-logo {
   display: grid;
@@ -377,14 +381,13 @@ input[type=submit]:hover {
   text-align: right;
 }
 .Nav-bar {
-  margin: 0px;
   padding: 10px;
   display: inline-block;
   width: 100%;
   text-align: center;
 }
 .Cover {
-  height: 500px;
+  height: auto;
   margin: 0px;
   padding: 10px;
 }

@@ -249,6 +249,9 @@ class HomePage extends Component {
                   type="symbol"
                   id="marker"
                   layout={{ "icon-image": "marker-15", "icon-size": 1 }}
+                  paint={ {
+                    "icon-color" : "red"
+                }}
                 >
                   <Feature coordinates={[-93.522996, 45.586754]} />
                 </Layer>
