@@ -217,11 +217,10 @@ class HomePage extends Component {
             <div>
               <h1>Our Facebook Feed</h1>
             </div>
-            <div>
+            <div className="facebook-feed">
               <FacebookProvider
                 className="facebook-feed"
                 appId="810535819790517"
-                height="400px"
               >
                 <Page
                   className="facebook-feed"
