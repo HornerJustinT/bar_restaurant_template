@@ -9,10 +9,10 @@
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: absolute;
-  width: 5vw;
-  height: 5vw;
+  width: 3vw;
+  height: 3vw;
   left: 5vw;
-  top: 15vw;
+  top: 13vw;
 }
 
 /* Color/shape of burger icon bars */
@@ -26,15 +26,15 @@
 }
 
 /* Position and sizing of clickable cross button */
-.bm-cross-button {
+/* .bm-cross-button {
   height: 24px;
   width: 24px;
-}
+} */
 
 /* Color/shape of close button cross */
-.bm-cross {
+/* .bm-cross {
   background: #bdc3c7;
-}
+} */
 
 /*
 Sidebar wrapper styles
@@ -47,7 +47,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* General sidebar styles */
 .bm-menu {
-  background: #373a47;
+  background: #373a477a;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
 }
@@ -116,10 +116,12 @@ Note: Beware of modifying this element as it can break the animations - you shou
     grid-template-rows: 400px 400px 400px;
   }
   .Menu-item {
-    font-size: 4vw;
+    margin:auto;
+    font-size: 2.5vh;
   }
   .Menu-order {
-    font-size: 4vw;
+    margin:auto;
+    font-size: 2.5vh;
   }
   .btn-primary{
     font-size: 4vw;
@@ -137,6 +139,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
     grid-template-rows: 100vw 100vw;
   }
   .Header-logo {
+    /*  */
     
   }
 }

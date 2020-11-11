@@ -63,7 +63,7 @@ class HomePage extends Component {
             </div>
           </Modal>
         </div>
-        <Menu width = "40%">
+        <Menu width = "45%">
         <a id="home" className="Menu-item" href="/">Home</a>
         <a id="about" className="Menu-item" href="#About">About</a>
         <a id="contact" className="Menu-item" href="#Contact">Contact</a>
