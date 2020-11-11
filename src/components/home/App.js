@@ -63,7 +63,13 @@ class HomePage extends Component {
             </div>
           </Modal>
         </div>
+        <Menu width = "40%">
+        <a id="home" className="Menu-item" href="/">Home</a>
+        <a id="about" className="Menu-item" href="#About">About</a>
+        <a id="contact" className="Menu-item" href="#Contact">Contact</a>
+        <button id ="onlineorder" className="Menu-order">Order Online</button>
 
+      </Menu>
         <div className="Banner">
           <div className="header-callout text-center">
             Online Ordering Now Available!{" "}
@@ -82,13 +88,7 @@ class HomePage extends Component {
             <div className="Header-menu">
 
 
-          <Menu width = "20%">
-        <a id="home" className="Menu-item" href="/">Home</a>
-        <a id="about" className="Menu-item" href="#About">About</a>
-        <a id="contact" className="Menu-item" href="#Contact">Contact</a>
-        <button id ="onlineorder" className="Menu-order">Order Online</button>
 
-      </Menu>
       </div>
             {/* <div className="Header-social-media">
               <SocialIcon url="https://www.facebook.com/Shooters-121490991194526/" />
