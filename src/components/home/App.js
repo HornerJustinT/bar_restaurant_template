@@ -66,7 +66,7 @@ class HomePage extends Component {
         <Menu width = "45%">
         <a id="home" className="Menu-item" href="/">Home</a>
         <a id="about" className="Menu-item" href="#About">About</a>
-        <a id="contact" className="Menu-item" href="#Contact">Contact</a>
+        <a id="contact" className="Menu-item" href="#About">Contact</a>
         <button     onClick={(e) => {
       e.preventDefault();
       window.location.href="https://shooters.froogleonline.io/";
@@ -298,6 +298,9 @@ class HomePage extends Component {
                 />
               </h4>
             </div>
+          </div>
+          <div className="black-bandaid">
+
           </div>
         </div>
       </div>

@@ -142,6 +142,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
     /*  */
     
   }
+  .black-bandaid{
+    background-color: black;
+    height: 15%;
+  }
 }
 @media (min-width: 1000px) {
   .Header{
@@ -386,6 +390,7 @@ input[type=submit]:hover {
 .eighty-twenty{
   display: grid;
   grid-template-rows: 20% 80%;
+  margin-bottom: 3%;
 }
 .two-columns{
   display: grid;
