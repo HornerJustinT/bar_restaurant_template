@@ -18,6 +18,9 @@ import ReactMapboxGl, {
 } from "react-mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { FacebookProvider, Feed, Page } from "react-facebook";
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-000000-01');
+ReactGA.pageview(window.location.pathname + window.location.search);
 const Map = ReactMapboxGl({
   accessToken:
     "pk.eyJ1IjoiaG9ybmVyMSIsImEiOiJja2dqYjF5ZjYwa2xrMnltbzZ1MXd1Z2NzIn0.tL4K0jThtP5QJzhkFt-WbQ",
@@ -140,7 +143,7 @@ class HomePage extends Component {
             <h1 className="shadow-title">
               Great food, wonderful service, and fun atmosphere
             </h1>
-            <form action={menu}>
+            <form action={menu} target="_blank">
               <input
                 className="Menu-link"
                 type="submit"
