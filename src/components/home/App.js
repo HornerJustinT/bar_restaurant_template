@@ -167,6 +167,8 @@ class HomePage extends Component {
           </div>{" "}
           <div className="About-right">
             <img
+              title="Shooters Sports Bar Hamburger"
+              alt = "Shooters Sports Bar Hamburger"
               width="100%"
               src="https://cdn.pixabay.com/photo/2016/05/25/10/43/hamburger-1414422_960_720.jpg"
             ></img>
